@@ -1,0 +1,255 @@
+@font-face {
+    font-family: riot-games;
+    font-weight: 50;
+    src: url(../fonts/Fonts_Package/BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf) format(truetype);
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    font-family: riot-games;
+    margin: 0;
+    max-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1, #26c6da, #00acc1, #26a69a);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#error-message {
+    color: red;
+    font-family: riot-games;
+    font-size: 25px;
+    position: absolute;
+    top: 11vh;
+    left: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: none;
+    text-align: center;
+}
+
+main {
+    font-family: riot-games;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#students-container {
+    font-family: riot-games;
+    max-width: 60vw;
+    max-height: 70vh;
+    min-width: 60vw;
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow-y: auto;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#students-container p{
+    font-family: riot-games;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroller {
+    width: auto;
+    height: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+input {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    border-radius: 10px;
+    color:black;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    cursor:text;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+button{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    color:black;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #26a69a;
+}
+
+#title {
+    font-size: 25px;
+}
+
+.pupil {
+    border: 1px solid white;
+    border-radius: 30px;
+    width: calc(25% - 20px);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pupil p {
+    font-size: 16px;
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pupil .paraOne {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pupil .paraTwo {
+    font-size: 16px;
+    padding: 7px;
+}
+
+.pupil .paraThree {
+    font-size: 16px;
+}
+
+.pupil button {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    form {
+        padding: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #error-message {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 468px) {
+
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #students-container {
+        padding: 0;
+        max-width: 50vh;
+        min-width: 50vh;
+        min-height: 20vh;
+        max-height: 20vh;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    #students-container p,
+    .details,
+    #title {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .mainArticle {
+        text-align: center;
+        flex-direction: row;
+        margin: 2px;
+        padding: 10px;
+    }
+
+    .mainArticle:hover {
+        border-color: #26a69a;
+    }
+
+    form {
+        width: 65vw;
+        height: 40vh;
+        margin-top: 5px;
+        padding: 40px;
+    }
+
+    input,
+    button {
+        font-size: 0.75rem;
+    }
+
+    .scroller {
+        white-space: nowrap;
+        width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+}

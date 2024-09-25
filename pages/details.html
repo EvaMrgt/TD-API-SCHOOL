@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/imgs/lotr.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/details.css">
+    <title>Students</title>
+</head>
+
+<body>
+    <header>
+        <h1>Details of your promo</h1>
+    </header>
+    <main>
+        <div id="error-message"></div>
+        <div id="students-container" class="scroller"></div>
+        <div>
+            <form>
+                <div>
+                    <p id="title">Enter your student's informations : </p>
+                </div>
+                <div>
+                    <label for="firstName"></label>
+                    <input type="text" placeholder="First Name" id="firstName">
+                </div>
+                <div>
+                    <label for="name"></label>
+                    <input type="text" placeholder="Last Name" id="name">
+                </div>
+                <div>
+                    <label for="age"></label>
+                    <input type="text" placeholder="Age" id="age">
+                </div>
+                <div>
+                    <button type="button" onclick="createStudents()">Create</button>
+                    <button type="button" onclick="deletePromo()">Delete the promo</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Copyrights - 2024 - Eva Margot - All rights reserved.</p>
+    </footer>
+    <script src="../assets/js/details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/imgs/lotr.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>SCHOOL</title>
+</head>
+
+<body>
+    <header>
+        <h1>Beta School</h1>
+    </header>
+    <main>
+        <div id="error-message"></div>
+        <div id="inputs">
+            <form>
+                <div>
+                    <p id="title">Enter your classes : </p>
+                </div>
+                <div>
+                    <label for="name"></label>
+                    <input type="text" placeholder="Promo's name" id="name">
+                </div>
+                <div>
+                    <input type="date" id="startDate">
+                </div>
+                <div>
+                    <input type="date" id="endDate">
+                </div>
+                <div>
+                    <button type="button" onclick="send()">Create</button>
+                </div>
+            </form>
+        </div>
+        <div id="promos-container" class="scroller">
+
+        </div>
+    </main>
+    <footer>
+        <p>Copyrights - 2024 - Eva Margot - All rights reserved.</p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
